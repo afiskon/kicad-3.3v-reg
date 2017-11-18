@@ -1,0 +1,148 @@
+EESchema Schematic File Version 4
+LIBS:3-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector:USB_B_Micro J1
+U 1 1 5A0936B4
+P 1950 1850
+F 0 "J1" H 1750 2300 50  0000 L CNN
+F 1 "USB_OTG" H 1750 2200 50  0000 L CNN
+F 2 "Connectors:USB_Mini-B" H 2100 1800 50  0001 C CNN
+F 3 "" H 2100 1800 50  0001 C CNN
+	1    1950 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L regul:AP1117-33 U1
+U 1 1 5A09373B
+P 2900 1750
+F 0 "U1" H 2750 1875 50  0000 C CNN
+F 1 "AP1117-33" H 2900 1875 50  0000 L CNN
+F 2 "TO_SOT_Packages_SMD:SOT-223-3_TabPin2" H 2900 1950 50  0001 C CNN
+F 3 "" H 3000 1500 50  0001 C CNN
+	1    2900 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR02
+U 1 1 5A093796
+P 3300 2450
+F 0 "#PWR02" H 3300 2200 50  0001 C CNN
+F 1 "GND" H 3300 2300 50  0000 C CNN
+F 2 "" H 3300 2450 50  0001 C CNN
+F 3 "" H 3300 2450 50  0001 C CNN
+	1    3300 2450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2600 1750 2250 1750
+Wire Wire Line
+	2250 1750 2250 1650
+Wire Wire Line
+	1950 2350 3550 2350
+Wire Wire Line
+	2900 2350 2900 2050
+$Comp
+L Connector:Conn_01x02 J2
+U 1 1 5A0937ED
+P 3750 1800
+F 0 "J2" H 3750 1900 50  0000 C CNN
+F 1 "Conn_01x02" H 3750 1600 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 3750 1800 50  0001 C CNN
+F 3 "" H 3750 1800 50  0001 C CNN
+	1    3750 1800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3550 2350 3550 1900
+Connection ~ 2900 2350
+Wire Wire Line
+	3200 1750 3550 1750
+Wire Wire Line
+	3550 1750 3550 1800
+$Comp
+L device:C C1
+U 1 1 5A0939CA
+P 2500 2050
+F 0 "C1" H 2525 2150 50  0000 L CNN
+F 1 "C" H 2525 1950 50  0000 L CNN
+F 2 "Capacitors_SMD:C_1206_HandSoldering" H 2538 1900 50  0001 C CNN
+F 3 "" H 2500 2050 50  0001 C CNN
+	1    2500 2050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2500 2200 2500 2350
+Connection ~ 2500 2350
+Wire Wire Line
+	2500 1900 2500 1750
+Connection ~ 2500 1750
+$Comp
+L device:C C2
+U 1 1 5A093ACA
+P 3300 2050
+F 0 "C2" H 3325 2150 50  0000 L CNN
+F 1 "C" H 3325 1950 50  0000 L CNN
+F 2 "Capacitors_SMD:C_1206_HandSoldering" H 3338 1900 50  0001 C CNN
+F 3 "" H 3300 2050 50  0001 C CNN
+	1    3300 2050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3300 1500 3300 1900
+Connection ~ 3300 1750
+Wire Wire Line
+	3300 2200 3300 2450
+Connection ~ 3300 2350
+$Comp
+L power:+3.3V #PWR01
+U 1 1 5A093BBC
+P 3300 1500
+F 0 "#PWR01" H 3300 1350 50  0001 C CNN
+F 1 "+3.3V" H 3300 1640 50  0000 C CNN
+F 2 "" H 3300 1500 50  0001 C CNN
+F 3 "" H 3300 1500 50  0001 C CNN
+	1    3300 1500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1950 2250 1950 2350
+$Comp
+L Connector:Conn_01x02 J3
+U 1 1 5A095C47
+P 1900 2650
+F 0 "J3" H 1900 2750 50  0000 C CNN
+F 1 "Conn_01x02" H 1900 2450 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 1900 2650 50  0001 C CNN
+F 3 "" H 1900 2650 50  0001 C CNN
+	1    1900 2650
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2100 2650 2300 2650
+Wire Wire Line
+	2300 2650 2300 2350
+Connection ~ 2300 2350
+Wire Wire Line
+	2100 2550 2350 2550
+Wire Wire Line
+	2350 2550 2350 1750
+Connection ~ 2350 1750
+NoConn ~ 2250 1850
+NoConn ~ 2250 1950
+NoConn ~ 2250 2050
+NoConn ~ 1850 2250
+$EndSCHEMATC
