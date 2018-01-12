@@ -2,7 +2,7 @@
 
   (general
     (thickness 1.6)
-    (drawings 0)
+    (drawings 5)
     (tracks 27)
     (zones 0)
     (modules 6)
@@ -25,7 +25,7 @@
     (41 Cmts.User user hide)
     (42 Eco1.User user hide)
     (43 Eco2.User user hide)
-    (44 Edge.Cuts user hide)
+    (44 Edge.Cuts user)
     (45 Margin user hide)
     (46 B.CrtYd user hide)
     (47 F.CrtYd user)
@@ -359,6 +359,12 @@
       (rotate (xyz 0 0 0))
     )
   )
+
+  (gr_line (start 124.46 107.95) (end 125.73 107.95) (layer Edge.Cuts) (width 0.15))
+  (gr_line (start 124.46 92.71) (end 124.46 107.95) (layer Edge.Cuts) (width 0.15))
+  (gr_line (start 168.91 92.71) (end 124.46 92.71) (layer Edge.Cuts) (width 0.15))
+  (gr_line (start 168.91 107.95) (end 168.91 92.71) (layer Edge.Cuts) (width 0.15))
+  (gr_line (start 125.73 107.95) (end 168.91 107.95) (layer Edge.Cuts) (width 0.15))
 
   (segment (start 137.16 95.25) (end 137.16 97.06) (width 0.5) (layer F.Cu) (net 1))
   (segment (start 137.16 97.06) (end 139.7 99.6) (width 0.5) (layer F.Cu) (net 1) (tstamp 5A095C3D))
